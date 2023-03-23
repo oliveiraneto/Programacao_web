@@ -1,3 +1,8 @@
+//Curso de Engenharia de Software - UniEVANGÉLICA 
+//Disciplina de Programação Web 
+//Dev: Sebastião Oliveira Silva Neto - 2011478
+//DATA 23/03/2023 -->
+
 // Define o número de pares de cartas
 const numPairs = 8;
 
