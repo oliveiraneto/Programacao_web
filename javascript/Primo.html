@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Números Primos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Números Primos</h1>
+	<p>Insira um número abaixo para verificar se ele é primo:</p>
+	<input type="number" id="numero">
+	<button onclick="verificar()">Verificar</button>
+	<p id="resultado"></p>
+    <script>
+        function primo(n) {
+            if (n <= 1) {
+                  return false;
+            }
+            for (var i = 2; i <= Math.sqrt(n); i++) {
+                  if (n % i == 0) {
+                    return false;
+                  }
+            }
+            return true;
+        }
+    
+        function verificar() {
+            var numero = parseInt(document.getElementById("numero").value);
+            if (isNaN(numero)) {
+                document.getElementById("resultado").innerHTML = "Por favor, insira um número válido.";
+            } else {
+                var resultado = (primo(numero)) ? "O número " + numero + " é primo." : "O número " + numero + " não é primo.";
+                document.getElementById("resultado").innerHTML = resultado;
+            }
+        }
+    </script>
+</body>
+</html>    

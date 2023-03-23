@@ -1,0 +1,53 @@
+/* Estilos CSS para a página */
+
+/* Estilo para o título da página */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Estilo para o parágrafo explicativo */
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 1rem;
+}
+
+/* Estilo para a tabela */
+table {
+    border-collapse: collapse;
+    margin: 2rem auto;
+}
+
+/* Estilo para as células da tabela */
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para a célula de cabeçalho da tabela */
+th {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+/* Estilo para o botão de ordenar */
+button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para o resultado */
+.resultado {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+}
