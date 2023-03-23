@@ -1,3 +1,8 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,28 +13,33 @@
 </head>
 <body>
 	<h1>Reversão de String</h1>
+	<!-- Formulário para entrada da string -->
 	<p>Insira a string abaixo para reverter:</p>
 	<input type="text" id="string">
 	<button onclick="reverter()">Reverter String</button>
-	<p id="resultado"></p>
-    <script>
-        function reverseString(str) {
-            var reversed = "";
-            for (var i = str.length - 1; i >= 0; i--) {
-                  reversed += str[i];
-            }
-            return reversed;
+    <!-- Elemento para exibição do resultado da reversão -->
+<p id="resultado"></p>
+
+<script>
+	// Função para reverter a string
+    function reverseString(str) {
+        var reversed = "";
+        for (var i = str.length - 1; i >= 0; i--) {
+              reversed += str[i];
         }
-    
-        function reverter() {
-            var string = document.getElementById("string").value;
-            if (string.length === 0) {
-                document.getElementById("resultado").innerHTML = "Por favor, insira uma string.";
-            } else {
-                var resultado = reverseString(string);
-                document.getElementById("resultado").innerHTML = "String reversa: " + resultado;
-            }
+        return reversed;
+    }
+
+    // Função para lidar com o clique no botão e exibir o resultado
+    function reverter() {
+        var string = document.getElementById("string").value;
+        if (string.length === 0) {
+            document.getElementById("resultado").innerHTML = "Por favor, insira uma string.";
+        } else {
+            var resultado = reverseString(string);
+            document.getElementById("resultado").innerHTML = "String reversa: " + resultado;
         }
-    </script>
+    }
+</script>
 </body>
-</html>    
+</html>

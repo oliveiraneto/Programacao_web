@@ -1,3 +1,7 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,23 +11,30 @@
 <body>
 	<h1>Calcular Média</h1>
 	<form>
+		<!-- Formulário para entrada de números -->
 		<label for="numbers">Insira uma lista de números separados por vírgula:</label>
 		<input type="text" id="numbers" name="numbers">
 		<br><br>
 		<button type="button" onclick="calcular()">Calcular</button>
 	</form>
+	<!-- Resultado da média -->
 	<p id="resultado"></p>
     <script>
         function calcular() {
+            // Obtém os números do formulário
             var numbers = document.getElementById("numbers").value.split(",").map(Number);
+            // Calcula a média
             var media = calcularMedia(numbers);
+            // Exibe o resultado na página
             document.getElementById("resultado").innerHTML = "A média dos números é: " + media;
         }
         function calcularMedia(arr) {
+            // Calcula a soma dos números do array
             var soma = 0;
             for (var i = 0; i < arr.length; i++) {
                 soma += arr[i];
             }
+            // Retorna a média
             return soma / arr.length;
         }
     </script>

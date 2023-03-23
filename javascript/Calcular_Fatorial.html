@@ -1,15 +1,28 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Define o título da página -->
   <title>Calcular Fatorial</title>
+  <!-- Importa o arquivo CSS para estilizar a página -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Título principal da página -->
   <h1>Calcular Fatorial</h1>
-  <label>Digite um número:</label>
-  <input type="number" id="num">
-  <button onclick="calcular()">Calcular</button>
+  <!-- Campo de entrada do número a ser calculado o fatorial -->
+<label>Digite um número:</label>
+<input type="number" id="num">
+
+  <!-- Botão para calcular o fatorial do número digitado -->
+<button onclick="calcular()">Calcular</button>
+
+  <!-- Elemento para exibir o resultado do cálculo -->
   <p id="resultado"></p>
+  <!-- Importa o arquivo JavaScript que contém a função para calcular o fatorial -->
   <script src="script.js"></script>
 </body>
 </html>

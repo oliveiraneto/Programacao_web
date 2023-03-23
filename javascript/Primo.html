@@ -1,18 +1,32 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
+
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Configurações da página -->
 	<title>Números Primos</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Cabeçalho da página -->
 	<h1>Números Primos</h1>
+	<!-- Instrução para o usuário -->
 	<p>Insira um número abaixo para verificar se ele é primo:</p>
+	<!-- Caixa de entrada para o número a ser verificado -->
 	<input type="number" id="numero">
+	<!-- Botão para iniciar a verificação -->
 	<button onclick="verificar()">Verificar</button>
+	<!-- Local onde será exibido o resultado da verificação -->
 	<p id="resultado"></p>
+    <!-- Scripts JavaScript -->
     <script>
+        // Função para verificar se um número é primo
         function primo(n) {
             if (n <= 1) {
                   return false;
@@ -24,16 +38,18 @@
             }
             return true;
         }
-    
-        function verificar() {
-            var numero = parseInt(document.getElementById("numero").value);
-            if (isNaN(numero)) {
-                document.getElementById("resultado").innerHTML = "Por favor, insira um número válido.";
-            } else {
-                var resultado = (primo(numero)) ? "O número " + numero + " é primo." : "O número " + numero + " não é primo.";
-                document.getElementById("resultado").innerHTML = resultado;
-            }
+            // Função para verificar o número inserido e exibir o resultado
+    function verificar() {
+        var numero = parseInt(document.getElementById("numero").value);
+        // Verifica se o valor inserido é um número
+        if (isNaN(numero)) {
+            document.getElementById("resultado").innerHTML = "Por favor, insira um número válido.";
+        } else {
+            // Verifica se o número é primo e exibe o resultado
+            var resultado = (primo(numero)) ? "O número " + numero + " é primo." : "O número " + numero + " não é primo.";
+            document.getElementById("resultado").innerHTML = resultado;
         }
-    </script>
+    }
+</script>
 </body>
-</html>    
+</html>

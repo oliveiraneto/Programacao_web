@@ -1,3 +1,8 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,30 +12,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Cabeçalho da página -->
 	<h1>Sequência de Fibonacci</h1>
-	<p>Insira o número de termos abaixo para gerar a sequência:</p>
-	<input type="number" id="numero">
-	<button onclick="gerar()">Gerar Sequência</button>
-	<p id="resultado"></p>
-    <script>
-        function fibonacci(n) {
-            var fibo = [0, 1];
-            for (var i = 2; i <= n; i++) {
-                  fibo[i] = fibo[i-1] + fibo[i-2];
-            }
-            return fibo;
+    <!-- Formulário para inserção do número de termos -->
+<p>Insira o número de termos abaixo para gerar a sequência:</p>
+<input type="number" id="numero">
+<button onclick="gerar()">Gerar Sequência</button>
+
+<!-- Elemento onde será exibido o resultado -->
+<p id="resultado"></p>
+
+<script>
+    // Função que gera a sequência de Fibonacci com n termos
+    function fibonacci(n) {
+        var fibo = [0, 1];
+        for (var i = 2; i <= n; i++) {
+              fibo[i] = fibo[i-1] + fibo[i-2];
         }
-    
-        function gerar() {
-            var numero = parseInt(document.getElementById("numero").value);
-            if (isNaN(numero)) {
-                document.getElementById("resultado").innerHTML = "Por favor, insira um número válido.";
-            } else {
-                var sequencia = fibonacci(numero);
-                var resultado = "Sequência de Fibonacci com " + numero + " termos: " + sequencia.join(", ");
-                document.getElementById("resultado").innerHTML = resultado;
-            }
+        return fibo;
+    }
+
+    // Função que é chamada quando o botão é clicado
+    function gerar() {
+        var numero = parseInt(document.getElementById("numero").value);
+        if (isNaN(numero)) {
+            document.getElementById("resultado").innerHTML = "Por favor, insira um número válido.";
+        } else {
+            var sequencia = fibonacci(numero);
+            var resultado = "Sequência de Fibonacci com " + numero + " termos: " + sequencia.join(", ");
+            document.getElementById("resultado").innerHTML = resultado;
         }
-    </script>
+    }
+</script>
 </body>
-</html>    
+</html>

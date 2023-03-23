@@ -1,27 +1,53 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Define o título da página -->
 	<title>Contador de Palavras</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Define a codificação de caracteres -->
+<meta charset="UTF-8">
+
+<!-- Define a escala inicial de visualização para dispositivos móveis -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Importa o arquivo CSS para estilizar a página -->
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Título principal da página -->
 	<h1>Contador de Palavras</h1>
-	<p>Insira o texto abaixo para contar as palavras:</p>
-	<textarea id="texto"></textarea>
-	<button onclick="contar()">Contar Palavras</button>
-	<p id="resultado"></p>
-    <script>
-        function contarPalavras(str) {
-            return str.split(" ").length;
-        }
-    
-        function contar() {
-            var texto = document.getElementById("texto").value;
-            var resultado = contarPalavras(texto);
-            document.getElementById("resultado").innerHTML = "O texto possui " + resultado + " palavras.";
-        }
-    </script>
+
+    <!-- Descrição do que deve ser feito -->
+<p>Insira o texto abaixo para contar as palavras:</p>
+
+<!-- Campo de entrada do texto -->
+<textarea id="texto"></textarea>
+
+<!-- Botão para realizar a contagem das palavras -->
+<button onclick="contar()">Contar Palavras</button>
+
+<!-- Elemento para exibir o resultado da contagem -->
+<p id="resultado"></p>
+
+<!-- Importa o arquivo JavaScript que contém as funções para contar as palavras -->
+<script>
+    function contarPalavras(str) {
+        // Divide a string em palavras separadas por espaços e retorna a quantidade de elementos do array resultante
+        return str.split(" ").length;
+    }
+
+    function contar() {
+        // Obtém o texto digitado pelo usuário
+        var texto = document.getElementById("texto").value;
+        
+        // Conta as palavras do texto e exibe o resultado
+        var resultado = contarPalavras(texto);
+        document.getElementById("resultado").innerHTML = "O texto possui " + resultado + " palavras.";
+    }
+</script>
 </body>
-</html>     
+</html>
+    

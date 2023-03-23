@@ -1,37 +1,49 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Soma de Array</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Importação do arquivo de estilos -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Título da página -->
 	<h1>Soma de Array</h1>
-	<p>Insira um array de números separados por vírgula abaixo para calcular a soma:</p>
-	<input type="text" id="array">
-	<button onclick="calcular()">Calcular Soma</button>
-	<p id="resultado"></p>
-    <script>
-        function sumArray(arr) {
-            var sum = 0;
-            for (var i = 0; i < arr.length; i++) {
-                  if (typeof arr[i] === 'number') {
-                    sum += arr[i];
-                  }
-            }
-            return sum;
+    <!-- Descrição e entrada do array a ser calculado -->
+<p>Insira um array de números separados por vírgula abaixo para calcular a soma:</p>
+<input type="text" id="array">
+<button onclick="calcular()">Calcular Soma</button>
+
+<!-- Exibição do resultado -->
+<p id="resultado"></p>
+
+<!-- Script para o cálculo da soma -->
+<script>
+    function sumArray(arr) {
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+              if (typeof arr[i] === 'number') {
+                sum += arr[i];
+              }
         }
-    
-        function calcular() {
-            var array = document.getElementById("array").value;
-            var arr = array.split(",");
-            for (var i = 0; i < arr.length; i++) {
-                arr[i] = parseFloat(arr[i]);
-            }
-            var resultado = sumArray(arr);
-            document.getElementById("resultado").innerHTML = "A soma dos números é: " + resultado;
+        return sum;
+    }
+
+    function calcular() {
+        var array = document.getElementById("array").value;
+        var arr = array.split(",");
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = parseFloat(arr[i]);
         }
-    </script>
+        var resultado = sumArray(arr);
+        document.getElementById("resultado").innerHTML = "A soma dos números é: " + resultado;
+    }
+</script>
 </body>
-</html>    
+</html>

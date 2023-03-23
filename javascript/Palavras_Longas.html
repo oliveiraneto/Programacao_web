@@ -1,3 +1,8 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 23/03/2023 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,28 +12,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Título principal -->
 	<h1>Palavra Mais Longa</h1>
-	<p>Insira uma frase abaixo para descobrir qual a palavra mais longa:</p>
-	<input type="text" id="frase">
-	<button onclick="encontrarPalavraMaisLonga()">Encontrar Palavra Mais Longa</button>
-	<p id="resultado"></p>
-    <script>
-        function palavraMaisLonga(str) {
-            var palavras = str.split(" ");
-            var maisLonga = "";
-            for (var i = 0; i < palavras.length; i++) {
-                  if (palavras[i].length > maisLonga.length) {
-                    maisLonga = palavras[i];
-                  }
-            }
-            return maisLonga;
+    <!-- Descrição e entrada do usuário -->
+<p>Insira uma frase abaixo para descobrir qual a palavra mais longa:</p>
+<input type="text" id="frase">
+
+<!-- Botão para executar a função -->
+<button onclick="encontrarPalavraMaisLonga()">Encontrar Palavra Mais Longa</button>
+
+<!-- Resultado da função -->
+<p id="resultado"></p>
+
+<script>
+    function palavraMaisLonga(str) {
+        var palavras = str.split(" ");
+        var maisLonga = "";
+        for (var i = 0; i < palavras.length; i++) {
+              if (palavras[i].length > maisLonga.length) {
+                maisLonga = palavras[i];
+              }
         }
-    
-        function encontrarPalavraMaisLonga() {
-            var frase = document.getElementById("frase").value;
-            var resultado = palavraMaisLonga(frase);
-            document.getElementById("resultado").innerHTML = "A palavra mais longa é: " + resultado;
-        }
-    </script>
+        return maisLonga;
+    }
+
+    function encontrarPalavraMaisLonga() {
+        var frase = document.getElementById("frase").value;
+        var resultado = palavraMaisLonga(frase);
+        document.getElementById("resultado").innerHTML = "A palavra mais longa é: " + resultado;
+    }
+</script>
 </body>
-</html>    
+</html>
