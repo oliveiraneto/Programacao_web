@@ -1,0 +1,64 @@
+/* Define a cor de fundo da página */
+body {
+    background-image: url('imagem5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fdfdfd;
+    
+}
+  /* Define a largura máxima do conteúdo da página */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estiliza o cabeçalho h1 */
+  h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  ul{
+    color:#fff;
+  }
+  li{
+    color:#fff;
+  }
+  
+  /* Estiliza a tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Estiliza o cabeçalho da tabela */
+  thead {
+    background-color: #111111;
+    color: #fdfbfb;
+  }
+  
+  /* Estiliza as células da tabela */
+  td, th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #070707;
+    font-weight: bold;
+  }
+  
+  /* Estiliza os links da lista */
+  ul li a {
+    color: #fafafa;
+    text-decoration: none;
+  }
+  
+  /* Estiliza as imagens */
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  

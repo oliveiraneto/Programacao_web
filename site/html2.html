@@ -1,0 +1,76 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 03/03/2023 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Formulário Astronomia</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <h1>Formulário sobre astronomia.</h1>
+
+    <h2>Preencha o formulário e selecione o interesse que deseja aprender mais sobre.</h2> <!-- Título secundário da página -->
+
+    <!-- Campo de entrada de texto para o nome -->
+<form action="/process-form" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required> 
+
+    <!-- Campo de entrada de email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>  
+    
+    <!-- Campo de entrada de telefone com expressão regular -->
+    <label for="phone">Celular:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> 
+
+    <!-- Campo de entrada de número para idade com limite mínimo e máximo -->
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required> 
+    
+    <!-- Campo de seleção de gênero -->
+    <label for="gender">Gênero:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Selecione</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+        <option value="other">Outro</option>
+    </select>  
+
+     <!-- Lista de opções de interesse com caixas de seleção -->
+    <ul>
+        <li>
+            <label for="interesses">Interesses:</label>
+
+            <!-- Opção "Planetas" -->
+            <input type="checkbox" id="interesse_planetas" name="interesses[]" value="planetas">
+                <label for="interesse_planetas">Planetas</label>
+            
+            <!-- Opção "Estrelas" -->
+            <input type="checkbox" id="interesse_estrelas" name="interesses[]" value="estrelas">
+                <label for="interesse_estrelas">Estrelas</label>
+            
+            <!-- Opção "Buracos Negros" -->
+            <input type="checkbox" id="interesse_buracos_negros" name="interesses[]" value="buracos negros">
+                <label for="interesse_buracos_negros">Buracos Negros</label><br>
+            
+            <!-- Opção "Asteroides" -->
+            <input type="checkbox" id="interesse_asteroides" name="interesses[]" value="asteroides">
+                <label for="interesse_asteroides">Asteroides</label><br>
+           
+            
+        </li>
+    </ul>
+
+    <!-- Campo de entrada de texto para a mensagem -->
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <!-- Botão para enviar o formulário -->
+    <button type="submit">Enviar Dados</button>
+</form>
+</body>
+</html>
