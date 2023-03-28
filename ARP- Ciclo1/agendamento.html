@@ -1,0 +1,61 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Sebastião Oliveira Silva Neto - 2011478
+DATA 28/03/2023 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Agendamento de Consulta</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Importação do arquivo de estilo CSS -->
+  </head>
+  <body>
+    <h1>Tela de Agendamento de Consulta</h1>
+    
+    <!-- Calendário de datas disponíveis -->
+    <form action="/process-form" method="post">
+    <div>
+      <label for="data-consulta">Data da consulta:</label>
+      <input type="date" id="data-consulta">
+    </div>
+
+    <!-- Seleção de horários disponíveis -->
+    <div>
+      <label for="horario-consulta">Horário da consulta:</label>
+      <select id="horario-consulta">
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+      </select>
+    </div>
+
+    <!-- Seleção do médico responsável pelo atendimento -->
+    <div>
+      <label for="medico">Médico:</label>
+      <select id="medico">
+        <option value="1">Dr. João Silva</option>
+        <option value="2">Dra. Maria Santos</option>
+        <option value="3">Dr. Carlos Oliveira</option>
+      </select>
+    </div>
+
+    <!-- Seleção do tipo de consulta -->
+    <div>
+      <label for="tipo-consulta">Tipo de consulta:</label>
+      <select id="tipo-consulta">
+        <option value="1">Consulta médica</option>
+        <option value="2">Exame clínico</option>
+        <option value="3">Exame laboratorial</option>
+      </select>
+    </div>
+
+    <!-- Botão de confirmação de agendamento -->
+    <button type="submit">Agendar consulta</button>\
+    </form>
+  </body>
+</html>
