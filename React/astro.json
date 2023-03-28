@@ -1,0 +1,60 @@
+{
+  "planetas": [
+    {
+      "nome": "Mercúrio",
+      "distancia_media_ao_sol_km": 57910000,
+      "periodo_orbital_dias": 88,
+      "temperatura_media_superficie_celsius": 167,
+      "numero_de_satelites": 0
+    },
+    {
+      "nome": "Vênus",
+      "distancia_media_ao_sol_km": 108200000,
+      "periodo_orbital_dias": 225,
+      "temperatura_media_superficie_celsius": 464,
+      "numero_de_satelites": 0
+    },
+    {
+      "nome": "Terra",
+      "distancia_media_ao_sol_km": 149600000,
+      "periodo_orbital_dias": 365,
+      "temperatura_media_superficie_celsius": 15,
+      "numero_de_satelites": 1
+    },
+    {
+      "nome": "Marte",
+      "distancia_media_ao_sol_km": 227900000,
+      "periodo_orbital_dias": 687,
+      "temperatura_media_superficie_celsius": -63,
+      "numero_de_satelites": 2
+    },
+    {
+      "nome": "Júpiter",
+      "distancia_media_ao_sol_km": 778500000,
+      "periodo_orbital_dias": 4331,
+      "temperatura_media_superficie_celsius": -108,
+      "numero_de_satelites": 79
+    },
+    {
+      "nome": "Saturno",
+      "distancia_media_ao_sol_km": 1434000000,
+      "periodo_orbital_dias": 10747,
+      "temperatura_media_superficie_celsius": -139,
+      "numero_de_satelites": 82
+    },
+    {
+      "nome": "Urano",
+      "distancia_media_ao_sol_km": 2871000000,
+      "periodo_orbital_dias": 30589,
+      "temperatura_media_superficie_celsius": -197,
+      "numero_de_satelites": 27
+    },
+    {
+      "nome": "Netuno",
+      "distancia_media_ao_sol_km": 4495000000,
+      "periodo_orbital_dias": 59800,
+      "temperatura_media_superficie_celsius": -201,
+      "numero_de_satelites": 14
+    }
+  ]
+}
