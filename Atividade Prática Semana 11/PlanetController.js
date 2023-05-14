@@ -8,23 +8,27 @@ class PlanetController {
       this.planetModel = planetModel;
     }
   
+    // Método para buscar todos os planetas
     async getAllPlanets(req, res) {
       const planets = await this.planetModel.getAll();
       res.json({ inputs: planets });
     }
   
+    // Método para buscar um planeta por ID
     async getPlanetById(req, res) {
       const planet = await this.planetModel.getById(req.params.id);
       if (!planet) return res.status(404).send('Planeta não encontrado.');
       res.json({ inputs: planet });
     }
   
+    // Método para criar um novo planeta
     async createPlanet(req, res) {
       const newPlanet = req.body;
       const planet = await this.planetModel.create(newPlanet);
       res.json({ inputs: planet });
     }
   
+    // Método para atualizar um planeta existente
     async updatePlanet(req, res) {
       const planet = await this.planetModel.getById(req.params.id);
       if (!planet) return res.status(404).send('Planeta não encontrado.');
@@ -34,6 +38,7 @@ class PlanetController {
       res.json({ inputs: updatedPlanet });
     }
   
+    // Método para excluir um planeta existente
     async deletePlanet(req, res) {
       const planet = await this.planetModel.getById(req.params.id);
       if (!planet) return res.status(404).send('Planeta não encontrado.');
