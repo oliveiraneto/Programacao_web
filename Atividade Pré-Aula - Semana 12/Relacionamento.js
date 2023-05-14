@@ -1,3 +1,9 @@
+//Curso de Engenharia de Software - UniEVANGÉLICA 
+//Disciplina de Programação Web 
+//Dev: Sebastião Oliveira Silva Neto - 2011478
+//DATA 14/05/2023 -->
+
+
 const { Sequelize, Model, DataTypes } = require('sequelize');
 
 // Cria uma nova instância do Sequelize e conecta ao banco de dados
