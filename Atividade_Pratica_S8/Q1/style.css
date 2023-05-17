@@ -1,0 +1,70 @@
+/* Define a fonte e o tamanho do texto */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    }
+    /* Define o estilo do cabeçalho */
+    h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    }
+    /* Define o estilo do formulário */
+    form {
+    margin-bottom: 40px;
+    }
+    label {
+    display: block;
+    margin-bottom: 10px;
+    }
+    input[type="text"],
+    select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    }
+    input[type="checkbox"] {
+    margin-right: 10px;
+    }
+    button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    }
+    /* Define o estilo da tabela */
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+    }
+    th,
+    td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    }
+    th {
+    background-color: #007bff;
+    color: #fff;
+    }
+    /* Define o estilo da lista */
+    ul {
+    list-style: none;
+    margin-bottom: 40px;
+    }
+    li {
+    margin-bottom: 10px;
+    }
+    /* Define o estilo do link */
+    a {
+    color: #007bff;
+    text-decoration: none;
+    }
+    a:hover {
+    text-decoration: underline;
+    }
